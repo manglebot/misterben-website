@@ -1,9 +1,6 @@
 ## Welcome 
 
-This is just the start.
+![Some title text]({{ site.url }}{{ site.baseurl }}/assets/images/mb_logo_green.png)
 
-### Markdown
+New website on the way.
 
-Something bigger is coming soon...
-
-[![logo]({{ site.url }}{{ site.baseurl }}/assets/images/mb_logo_green.png)]({{ site.url }}{{ site.baseurl }}/assets/images/mb_logo_green.png)
