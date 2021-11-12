@@ -22,8 +22,10 @@ const scrollPics = () => {
     gsap.fromTo(w, {  x  }, {
       x: xEnd,
       scrollTrigger: { 
-        trigger: section, 
-        scrub: 0.1 
+          //scrolling section text between images
+        trigger: section,
+        scrub:0.5,
+          markers:false
       }
     });
   });
