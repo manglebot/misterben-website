@@ -167,7 +167,7 @@ footer div {
 
 /* ############# contact form ######### */
 
-footer div.wobble span {
+footer div span.wobble {
     display:inline-block;
     text-align: center;
     width: 100%;

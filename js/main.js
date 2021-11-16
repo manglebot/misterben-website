@@ -22,10 +22,8 @@ const scrollPics = () => {
     gsap.fromTo(w, {  x  }, {
       x: xEnd,
       scrollTrigger: { 
-          //scrolling section text between images
-        trigger: section,
-        scrub:0.5,
-          markers:false
+        trigger: section, 
+        scrub: 0.1 
       }
     });
   });
@@ -56,10 +54,10 @@ imagesLoaded(images).on('progress', updateProgress).on('always', scrollPics);
 //old movie style animated text
 /* modified from a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
 
-let tl = new TimelineMax({repeat:-1});
+let tl = gsap.timeline({repeat:-1});
 
 for(var i=50; i--;){
-  tl.to(".wobble",R(0.03,0.17),{opacity:R(0.5,1),y:R(-1.5,1.5)})
+  tl.to(".wobble",R(0.03,0.17),{opacity:R(0.6,1),y:R(-1.5,1.5)})
 };
 
 
