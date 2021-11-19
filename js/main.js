@@ -7,8 +7,7 @@ const loader = document.querySelector('.loader--text');
 const updateProgress = (instance) => 
   loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
 
-
-// 💚 this is teh green way with CSS vars too 🧦
+// rainbor colours on  BETA text
 function betaRandom() {
   gsap.to(".beta", { 
     duration: gsap.utils.random(0.1, 0.5), 
