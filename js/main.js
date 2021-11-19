@@ -8,6 +8,18 @@ const updateProgress = (instance) =>
   loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
 
 
+// 💚 this is teh green way with CSS vars too 🧦
+function betaRandom() {
+  gsap.to(".beta", { 
+    duration: gsap.utils.random(0.1, 0.5), 
+    color: "rgb(random(0,155,100), random(1,255,0), random(155,0,1))", 
+    onComplete: betaRandom 
+  })
+}
+
+betaRandom();
+
+
 // sideways image scroller
 const scrollPics = () => {
   document.body.style.overflow = 'auto';
@@ -18,12 +30,12 @@ const scrollPics = () => {
   
   gsap.utils.toArray('section').forEach((section, index) => {
     const w = section.querySelector('.wrapper');
-    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -0.7] : [w.scrollWidth * -1, 0];
     gsap.fromTo(w, {  x  }, {
       x: xEnd,
       scrollTrigger: { 
         trigger: section, 
-        scrub: 0.1 
+        scrub: 1 
       }
     });
   });

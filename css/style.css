@@ -92,6 +92,12 @@ li {
 header {height: 100vh}
 /*footer {height: 50vh}*/
 
+.beta {
+    clear: both;
+    font-size:2rem
+        
+}
+
 footer div {
     font-size:1.52rem;
     font-weight: bold;
