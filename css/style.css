@@ -93,7 +93,6 @@ header {height: 100vh}
 /*footer {height: 50vh}*/
 
 .beta {
-    clear: both;
     font-size:2rem  
 }
 
@@ -150,7 +149,7 @@ footer div {
 /* But it does not work with newer browsers, the below doesn't hide the play button parent div */
 
 *::-webkit-media-controls-panel {
-  display: none!important;
+  display: block;
   -webkit-appearance: none;
 }
 
