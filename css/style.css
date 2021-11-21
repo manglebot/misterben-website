@@ -25,7 +25,7 @@ body {
   background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
  
 */
-  background: url("/img/bg_filmgrain.gif") no-repeat center center;
+  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
