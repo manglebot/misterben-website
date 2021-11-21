@@ -21,12 +21,21 @@ body {
   overflow: hidden;
 /*  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;*/
   background-color: #3c3a36;
+/*
   background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
+ 
+*/
+content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  background: url("/img/bg_filmgrain.gif") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover;    
+    
   font-family: "Quicksand", monospace, sans-serif;
 }
 
