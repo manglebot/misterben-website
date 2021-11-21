@@ -25,17 +25,13 @@ body {
   background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
  
 */
-content: "";
-  display: block;
-  left: 0;
-  top: 0;
-  z-index: -10;
   background: url("/img/bg_filmgrain.gif") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;    
-    
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          width: 100%;
+          overflow: hidden;
   font-family: "Quicksand", monospace, sans-serif;
 }
 
