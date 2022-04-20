@@ -1,4 +1,3 @@
-/*jshint esversion: 6 */
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -44,24 +43,24 @@ const scrollPics = () => {
 
 ScrollTrigger.refresh();
 
-//sideways scroll images
-const boxes = gsap.utils.toArray('.container');
-
-boxes.forEach(box => {
-
-gsap.to(box, { 
-	// xPercent: () => -100 * (boxes.length -1),
-  x: () => -(document.querySelector('.container').scrollWidth - document.documentElement.clientWidth) + "px",
-	ease: "none", // <-- IMPORTANT!
-	scrollTrigger: {
-	trigger: box,
-	pin: true,
-	start: "-=100px",
-	end: () => "+=" + (document.querySelector('.container').scrollWidth - window.innerWidth),
-	scrub: true
-    }
-  });
-});
+////sideways scroll images
+//const boxes = gsap.utils.toArray('.container');
+//
+//boxes.forEach(box => {	
+//	
+//gsap.to(box, { 
+//	// xPercent: () => -100 * (boxes.length -1),
+//  x: () => -(document.querySelector('.container').scrollWidth - document.documentElement.clientWidth) + "px",
+//	ease: "none", // <-- IMPORTANT!
+//	scrollTrigger: {
+//	trigger: box,
+//	pin: true,
+//	start: "-=100px",
+//	end: () => "+=" + (document.querySelector('.container').scrollWidth - window.innerWidth),
+//	scrub: true
+//    }
+//  });
+//});
 
 //sideways scroll images (1)
 const boxes1 = gsap.utils.toArray('.container1');
