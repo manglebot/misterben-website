@@ -15,13 +15,13 @@
 
 body {
   background-color: #3c3a36;
-  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
+/*  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; */
  
-/*  background: url("../../misterben/img/bg_filmgrain.gif") no-repeat center center;*/
+  background: url("../img/bg_filmgrain.gif");
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
-          background-size: cover;
+		background-size: 100%;
           width: 100%;
           overflow: hidden;
   font-family: "Quicksand", monospace, sans-serif;
@@ -347,7 +347,7 @@ aside {
 }
 
 /* side css */
-.container, .container1, .container2, .container3, .container4 {
+.container, .container1, .container2, .container3, .container4, .container5 {
 /*
   width: 500%;
   height: 100%;
