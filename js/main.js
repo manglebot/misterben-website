@@ -139,24 +139,24 @@ gsap.to(box, {
   });
 });
 
-//sideways scroll images (5)
-const boxes5 = gsap.utils.toArray('.container5');
-
-boxes5.forEach(box => {
-
-gsap.to(box, { 
-	// xPercent: () => -100 * (boxes.length -1),
-  x: () => -(document.querySelector('.container5 ').scrollWidth - document.documentElement.clientWidth) + "px",
-	ease: "none", // <-- IMPORTANT!
-	scrollTrigger: {
-	trigger: box,
-	pin: true,
-	start: "-=100px",
-	end: () => "+=" + (document.querySelector('.container5').scrollWidth - window.innerWidth),
-	scrub: true
-    }
-  });
-});
+////sideways scroll images (5) --removed until I add illustration section
+//const boxes5 = gsap.utils.toArray('.container5');
+//
+//boxes5.forEach(box => {
+//
+//gsap.to(box, { 
+//	// xPercent: () => -100 * (boxes.length -1),
+//  x: () => -(document.querySelector('.container5 ').scrollWidth - document.documentElement.clientWidth) + "px",
+//	ease: "none", // <-- IMPORTANT!
+//	scrollTrigger: {
+//	trigger: box,
+//	pin: true,
+//	start: "-=100px",
+//	end: () => "+=" + (document.querySelector('.container5').scrollWidth - window.innerWidth),
+//	scrub: true
+//    }
+//  });
+//});
 
 ScrollTrigger.refresh();
 
