@@ -39,7 +39,7 @@ const scrollPics = () => {
       }
     });
   });
-};
+
 
 ScrollTrigger.refresh();
 
@@ -82,6 +82,8 @@ gsap.to(box, {
 });
 
 //sideways scroll images (2)
+ScrollTrigger.refresh();
+
 const boxes2 = gsap.utils.toArray('.container2');
 
 boxes2.forEach(box => {
@@ -156,6 +158,12 @@ gsap.to(box, {
 //    }
 //  });
 //});
+	
+	
+
+};
+//end of scrollPics
+
 
 // skew
 let proxy = { skew: 0 },
