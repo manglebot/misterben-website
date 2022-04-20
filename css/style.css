@@ -15,14 +15,14 @@
 
 body {
   background-color: #3c3a36;
-/*  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; */
+  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
  
-  background: url("../img/bg_filmgrain.gif");
+/*  background: url("../img/bg_filmgrain.gif");*/
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
-		background-size: 100%;
-          width: 100%;
+		background-size: cover;
+
           overflow: hidden;
   font-family: "Quicksand", monospace, sans-serif;
 }
