@@ -17,11 +17,11 @@ body {
   background-color: #3c3a36;
   background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
  
-/*  background: url("../img/bg_filmgrain.gif");*/
+  background: url("../img/bg_filmgrain.gif");
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
-		background-size: cover;
+		background-size: 100%;
 
           overflow: hidden;
   font-family: "Quicksand", monospace, sans-serif;
@@ -398,5 +398,19 @@ span {
     color: #fff;
 /*    padding: 20px;*/
   }
+
+
+.moreinfo {
+	margin: auto;
+	margin-top: 10vh;
+	width: 80%;
+}
+
+.moreinfo p, .moreinfo button {
+	margin-top: 10px;
+}
+.moreinfo h1 {
+	font-size: 3em
+}
 
 
