@@ -18,12 +18,12 @@ body {
   /* background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
   */
   background: url("../img/bg_filmgrain.gif");
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-		background-size: 120%;
-    background-attachment: fixed;
-          overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 120%;
+  background-attachment: fixed;
+  overflow: hidden;
   font-family: "Quicksand", monospace, sans-serif;
 }
 
@@ -32,8 +32,8 @@ body {
     content: "";
     background-image: url("/img/grain.jpg");
     -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -85,10 +85,8 @@ body {
 }
 */
 
-
-
 h1 { 
-  font-size: 5rem;
+  font-size: 16vw;
     color: orange;
 }
 h2 { font-size: 2rem }
