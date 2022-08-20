@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 // preload images
 const images = gsap.utils.toArray("img");
 const loader = document.querySelector(".loader--text");
@@ -15,7 +14,6 @@ function betaRandom() {
     onComplete: betaRandom 
   });
 }
-
 betaRandom();
 
 // preload then sideways text scroller
@@ -40,27 +38,7 @@ const scrollPics = () => {
     });
   });
 
-
 ScrollTrigger.refresh();
-
-////sideways scroll images
-//const boxes = gsap.utils.toArray('.container');
-//
-//boxes.forEach(box => {	
-//	
-//gsap.to(box, { 
-//	// xPercent: () => -100 * (boxes.length -1),
-//  x: () => -(document.querySelector('.container').scrollWidth - document.documentElement.clientWidth) + "px",
-//	ease: "none", // <-- IMPORTANT!
-//	scrollTrigger: {
-//	trigger: box,
-//	pin: true,
-//	start: "-=100px",
-//	end: () => "+=" + (document.querySelector('.container').scrollWidth - window.innerWidth),
-//	scrub: true
-//    }
-//  });
-//});
 
 //sideways scroll images (1)
 const boxes1 = gsap.utils.toArray('.container1');
@@ -168,12 +146,13 @@ gsap.to(box, {
 // skew
 let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter("#title", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 30 degrees. 
+    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
 
 ScrollTrigger.create({
   onUpdate: (self) => {
     let skew = clamp(self.getVelocity() / -30);
-    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly,
+    // it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if (Math.abs(skew) > Math.abs(proxy.skew)) {
       proxy.skew = skew;
       gsap.to(proxy, {skew: 0, duration: 0.4, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});

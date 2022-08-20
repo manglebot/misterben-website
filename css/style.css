@@ -15,15 +15,14 @@
 
 body {
   background-color: #3c3a36;
-  /* background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
-  */
-  background: url("../img/bg_filmgrain.gif");
+  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
+ 
+  /* background: url("../img/bg_filmgrain.gif"); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 120%;
-  background-attachment: fixed;
-  overflow: hidden;
+  background-size: cover;
+  overflow: repeat;
   font-family: "Quicksand", monospace, sans-serif;
 }
 
@@ -32,8 +31,8 @@ body {
     content: "";
     background-image: url("/img/grain.jpg");
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -85,8 +84,10 @@ body {
 }
 */
 
+
+
 h1 { 
-  font-size: 16vw;
+  font-size: 5rem;
     color: orange;
 }
 h2 { font-size: 2rem }
@@ -108,7 +109,7 @@ li {
   padding-right: 1rem;
 }
 
-header {height: 100vh}
+header {height: 80vh}
 /*footer {height: 50vh}*/
 
 .beta {
