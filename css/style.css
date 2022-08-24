@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: solid 1px pink; */
 }
 
 ::selection {
@@ -352,7 +353,7 @@ aside {
   height: 100%;
 */
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 .box {
