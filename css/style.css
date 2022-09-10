@@ -18,7 +18,7 @@ body {
   background-color: #3c3a36;
   background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
  
-  /* background: url("../img/bg_filmgrain.gif"); */
+  /* background: url("../img/bg_filmgrain.gif") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -88,20 +88,22 @@ body {
 
 
 h1 { 
-  /* font-size: 5rem; */
+  font-size: 8vw;
     color: orange;
 }
-h2 { font-size: 2rem }
+h2 { font-size: 5vw }
 
-img {
+.panel img {
   width: auto;
-  height: clamp(200px, 50vw, 550px);
+  height: 60vh;
+  
+  /* height: clamp(200px, 50vw, 550px); */
 /*    opacity: 0.7;*/
 }
 
 ul {
   padding-left: 1rem;
-  list-style: none;z
+  list-style: none;
 }
 
 li {
@@ -413,4 +415,16 @@ span {
 	font-size: 3em
 }
 
+/* beer slider tweaks */
+#sliders {
+  width: 80wv;
+  text-align: center;
+}
 
+.beer-slider-wlabels {
+  /* display: flex; */
+  margin: 10px auto;
+  width: 20wv;
+  height: auto;
+  /* outline: solid 1px red; */
+}
