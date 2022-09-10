@@ -16,9 +16,9 @@
 
 body {
   background-color: #3c3a36;
-  background: url("/misterben/img/bg_filmgrain.gif") no-repeat center center fixed; 
+  background: url("/misterben/img/bg_filmgrain.gif") repeat center center fixed; 
  
-  background: url("../img/bg_filmgrain.gif") no-repeat center center fixed;
+  background: url("../img/bg_filmgrain.gif") repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
