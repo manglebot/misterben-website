@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Ben Bayliss portfolio website" />
+        <title>Misterben</title>
+
+        <!--  <meta name="robots" content="noindex">-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="loader df aic jcc">
+            <div>
+                <h1>Loading</h1>
+                <h2 class="loader--text">0%</h2>
+            </div>
+        </div>
+        <div class="main-content">
+            <header class="df aic jcc">
+                <div class="wobble" style="width: 50vw;">
+                   <!-- <span class="beta">BETA</span> -->
+                    <h1 id="title">misterben</h1>
+                    <h2>photo retouching </h2>
+                    
+                </div>
+            </header>
+			
+            <section id="sliders">
+
+                <div id="slider1" class="beer-slider beer-slider-wlabels" data-beer-label="before">
+                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
+                    <div class="beer-reveal" data-beer-label="after">
+                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
+                    </div>
+                </div>
+
+                <div id="slider2" class="beer-slider beer-slider-wlabels" data-beer-label="before">
+                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
+                    <div class="beer-reveal" data-beer-label="after">
+                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
+                    </div>
+                </div>
+
+                <div id="slider3" class="beer-slider beer-slider-wlabels" data-beer-label="before">
+                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
+                    <div class="beer-reveal" data-beer-label="after">
+                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
+                    </div>
+                </div>
+<!-- 
+                <div id="slider1" class="beer-slider" data-beer-label="original">
+                    <img src="img/dark_energy_02.jpg" alt="dark energy 02" height="150px">
+                    <div class="beer-reveal" data-beer-label="sepicol">
+                      <img src="img/dark_energy_03.jpg" alt="dark energy 03" height="150px">
+                    </div>
+                  </div> -->
+
+
+                <!-- <iframe frameborder="0" class="juxtapose" width="100%" height="1365" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=94af0ac2-2f62-11ed-b5bb-6595d9b17862"></iframe>
+                <iframe frameborder="0" class="juxtapose" width="100%" height="1498" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1dcdd714-2fbf-11ed-b5bb-6595d9b17862"></iframe> -->
+
+            </section>
+
+                
+
+                
+
+			
+
+
+            <footer class="df aic jcc">
+            </footer>
+        </div>
+
+<!--
+        <video id="videoBG" poster="img/grain.jpg" autoplay muted loop playsinline controls="false">
+            <source src="vid/grain_bg700.mp4" type="video/mp4" />
+        </video>
+-->
+
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+        <!-- before-after slider -->
+        <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+        <script>
+          new BeerSlider(document.getElementById('slider'));
+        </script>
+		
+
+        <script src="js/main.js" type="module" crossorigin></script>
+    </body>
+</html>
