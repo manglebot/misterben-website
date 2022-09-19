@@ -417,14 +417,32 @@ span {
 
 /* beer slider tweaks */
 #sliders {
-  width: 80wv;
+  margin: auto;
+}
+
+#sliders {
+  position: relative;
+  margin: auto;
+  max-width: 805px;
   text-align: center;
 }
 
-.beer-slider-wlabels {
-  /* display: flex; */
+.cocoen {
   margin: 10px auto;
   width: 20wv;
   height: auto;
-  /* outline: solid 1px red; */
+  clear: both;
+  padding: 50px auto;
+}
+
+cocoen-component {
+  border:solid orange 0px;
+  margin-bottom: 15px;
+}
+
+cocoen-component::part(drag) {
+  background: orange;
+}
+cocoen-component::part(drag)::before {
+  border-color: orange;
 }

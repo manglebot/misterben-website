@@ -11,8 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+        
 
-        <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css"> -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
@@ -35,25 +36,19 @@
 			
             <section id="sliders">
 
-                <div id="slider1" class="beer-slider beer-slider-wlabels" data-beer-label="before">
-                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
-                    <div class="beer-reveal" data-beer-label="after">
-                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
-                    </div>
+                <div class="cocoen">
+                    <img src="img/car_unedited.jpg" alt="car unedited">
+                    <img src="img/car_green.jpg" alt="car with green background">
                 </div>
 
-                <div id="slider2" class="beer-slider beer-slider-wlabels" data-beer-label="before">
-                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
-                    <div class="beer-reveal" data-beer-label="after">
-                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
-                    </div>
+                <div class="cocoen">
+                    <img src="img/kids_orig.jpg" alt="kids unedited">
+                    <img src="img/kids_ed.jpg" alt="kids edited">
                 </div>
 
-                <div id="slider3" class="beer-slider beer-slider-wlabels" data-beer-label="before">
-                    <img src="img/dark_energy_02.jpg" alt="dark energy 02">
-                    <div class="beer-reveal" data-beer-label="after">
-                        <img src="img/dark_energy_03.jpg" alt="dark energy 03">
-                    </div>
+                <div class="cocoen">
+                    <img src="img/field_orig.jpg" alt="field unedited">
+                    <img src="img/field_ed.jpg" alt="field edited">
                 </div>
 <!-- 
                 <div id="slider1" class="beer-slider" data-beer-label="original">
@@ -91,9 +86,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
         <!-- before-after slider -->
-        <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+        <!-- Load Cocoen library -->
+        <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+
+        <!-- Turns all `.cocoen` elements into Cocoens -->
         <script>
-          new BeerSlider(document.getElementById('slider'));
+        Cocoen.parse(document.body);
         </script>
 		
 
