@@ -177,10 +177,3 @@ for(var i=50; i--;){
 function R(max,min){
 	return Math.random()*(max-min)+min;
 }
-
-
-// beer slider - before and after slider thingy
-
-new BeerSlider( document.getElementById( "slider1" ), { start: 50 } );
-new BeerSlider( document.getElementById( "slider2" ), { start: 50 } );
-new BeerSlider( document.getElementById( "slider3" ), { start: 50 } );
