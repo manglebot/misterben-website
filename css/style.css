@@ -416,8 +416,30 @@ span {
 }
 
 /* before-after slider tweaks */
+.label {
+  font-size:2.5em;
+  width: 805px;
+  margin: auto;
+}
+
+.label span:first-child {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+}
+
+.label span:last-child {
+  width: 300px;
+  text-align: right;
+}
+
+.label span:last-child {
+  float: right;
+}
+
 #sliders {
   margin: auto;
+  clear: both;
 }
 
 #sliders {
