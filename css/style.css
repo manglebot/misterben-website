@@ -32,8 +32,8 @@ body {
     content: "";
     background-image: url("/img/grain.jpg");
     -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -68,30 +68,21 @@ body {
     }
 }
 
-
-/*
-.video-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-#container {
-  height: 500vh;
-}
-*/
-
-
-
 h1 { 
-  font-size: 8vw;
+  font-size: 4rem;
     color: orange;
 }
-h2 { font-size: 5vw }
+h2 { font-size: 2rem }
+
+h3 { 
+  padding-top: 2em;
+  font-size: 2rem;
+
+}
+
+h3 a {
+  text-decoration: dotted;
+}
 
 .panel img {
   width: auto;
