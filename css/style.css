@@ -79,8 +79,12 @@ h3 {
   font-size: 1.4rem;
 }
 
-h3 a {
+h3 a:link {
   text-decoration: dotted;
+}
+
+h3 a:hover {
+  text-decoration: underline;
 }
 
 .panel img {
