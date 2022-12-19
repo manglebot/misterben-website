@@ -74,6 +74,14 @@ h1 {
 }
 h2 { font-size: 2rem }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h3 { 
   padding-top: 2rem;
   font-size: 1.4rem;
@@ -432,7 +440,7 @@ span {
 	font-size: 3em
 }
 
-.moreinfo h3 a, .moreinfo h3 button {
+.moreinfo h3 a, .moreinfo h3 button, #sliders h3 a {
   display: flex;
   justify-content:center;
   margin: 40px;
