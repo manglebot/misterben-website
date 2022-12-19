@@ -87,6 +87,11 @@ h3 a:hover {
   text-decoration: underline;
 }
 
+.panel {
+  text-align: center;
+  /* outline: solid orange; */
+}
+
 .panel img {
   width: auto;
   height: 60vh;
@@ -366,6 +371,10 @@ aside {
   overflow: hidden;
 }
 
+.spacer-after {
+  padding-bottom: 2em;
+}
+
 .blue {
   background-color: blue;
 }
@@ -397,16 +406,37 @@ span {
 
 
 .moreinfo {
+  color: white;
 	margin: auto;
 	margin-top: 10vh;
 	width: 80%;
+  max-width: 750px;
 }
+
+.moreinfo img {
+  margin: auto auto 40px 0;
+  padding: auto;
+  width: 100%;
+  max-width: 750px;
+  /* outline: solid orange; */
+}
+
+/* .moreinfo button {
+  outline:none;
+} */
 
 .moreinfo p, .moreinfo button {
 	margin-top: 10px;
 }
 .moreinfo h1 {
 	font-size: 3em
+}
+
+.moreinfo h3 a, .moreinfo h3 button {
+  display: flex;
+  justify-content:center;
+  margin: 40px;
+  color: orange;
 }
 
 /* before-after slider tweaks */

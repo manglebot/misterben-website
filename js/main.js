@@ -16,6 +16,8 @@ function betaRandom() {
 }
 betaRandom();
 
+ScrollTrigger.refresh();
+
 // preload then sideways text scroller
 const scrollPics = () => {
   document.body.style.overflow = "auto";
