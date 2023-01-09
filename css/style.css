@@ -108,6 +108,18 @@ h3 a:hover {
 /*    opacity: 0.7;*/
 }
 
+.container2 .panel {
+  background-color: white;
+  height: 430px;
+  /* margin: auto; */
+  display: flex;
+}
+
+.container2 .panel img {
+  height: auto;
+  margin: auto;
+}
+
 ul {
   padding-left: 1rem;
   list-style: none;
@@ -356,11 +368,11 @@ aside {
 }
 
 
-.container2 {
+.container3 {
   flex-direction: row;
 }
 
-.container2 .panel {
+.container3 .panel {
   min-width: 735px;
   outline: solid yellow;
 }

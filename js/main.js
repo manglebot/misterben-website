@@ -6,15 +6,15 @@ const loader = document.querySelector(".loader--text");
 const updateProgress = (instance) => 
   loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
 
-// rainbor colours on  BETA text
-function betaRandom() {
-  gsap.to(".beta", { 
+// rainbor colours text
+function rainbowRandom() {
+  gsap.to(".rainbow", { 
     duration: gsap.utils.random(0.1, 0.5), 
     color: "rgb(random(0,155,100), random(1,255,0), random(155,0,1))", 
-    onComplete: betaRandom 
+    onComplete: rainbowRandom 
   });
 }
-betaRandom();
+rainbowRandom();
 
 ScrollTrigger.refresh();
 
@@ -39,6 +39,9 @@ const scrollPics = () => {
       }
     });
   });
+
+
+
 
 
 ScrollTrigger.refresh();
