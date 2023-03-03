@@ -70,7 +70,7 @@ body {
 
 h1 { 
   font-size: 10vw;
-    color: orange;
+  color: orange;
 }
 h2 { font-size: 2rem }
 
@@ -110,7 +110,7 @@ h3 a:hover {
 
 .container2 .panel {
   background-color: white;
-  height: 430px;
+  max-height: 230px;
   /* margin: auto; */
   display: flex;
 }
@@ -304,38 +304,8 @@ footer div span.wobble {
   text-transform: none;
 }
 
-#fs-frm [type="checkbox"] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
-  display: inline-block;
-  width: auto;
-  margin: 0 .5em 0 0 !important;
-}
 
-#fs-frm [type="radio"] {
-  -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
-}
 
-/* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  display: inline;
-}
-#fs-frm fieldset.locale input[name="city"] {
-  width: 52%;
-}
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  width: 20%;
-}
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-  margin-right: 3%;
-}
 
 /* fix sections */
 /* ######################### */
