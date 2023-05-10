@@ -39,64 +39,113 @@ const scrollPics = () => {
       }
     });
   });
-}
+
+
+
 
 
 ScrollTrigger.refresh();
 
+////sideways scroll images
+//const boxes = gsap.utils.toArray('.container');
+//
+//boxes.forEach(box => {	
+//	
+//gsap.to(box, { 
+//	// xPercent: () => -100 * (boxes.length -1),
+//  x: () => -(document.querySelector('.container').scrollWidth - document.documentElement.clientWidth) + "px",
+//	ease: "none", // <-- IMPORTANT!
+//	scrollTrigger: {
+//	trigger: box,
+//	pin: true,
+//	start: "-=100px",
+//	end: () => "+=" + (document.querySelector('.container').scrollWidth - window.innerWidth),
+//	scrub: true
+//    }
+//  });
+//});
 
-// sideways scroll start
-const containers = gsap.utils.toArray('.container');
+//sideways scroll images (1)
+const boxes1 = gsap.utils.toArray('.container1');
 
-containers.forEach(container => {
-  gsap.to(container, {
-    x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-    ease: "none",
-    scrollTrigger: {
-      trigger: container,
-      pin: true,
-      start: "-=100px",
-      end: () => "+=" + (container.scrollWidth - window.innerWidth),
-      scrub: true
+boxes1.forEach(box => {
+
+gsap.to(box, { 
+	// xPercent: () => -100 * (boxes.length -1),
+  x: () => -(document.querySelector('.container1').scrollWidth - document.documentElement.clientWidth) + "px",
+	ease: "none", // <-- IMPORTANT!
+	scrollTrigger: {
+	trigger: box,
+	pin: true,
+	start: "-=100px",
+	end: () => "+=" + (document.querySelector('.container1').scrollWidth - window.innerWidth),
+	scrub: true
     }
   });
 });
-// sideways scroll end
 
-// Get the width of the content
-// const contentWidth = document.querySelector('.logos').offsetWidth;
+//sideways scroll images (2)
+ScrollTrigger.refresh();
 
-// Set the width of the background color to match the content width
-// gsap.set('.logos .image-container', {   overflow: 'visible', width: '100%', backgroundColor: '#fff' });
+const boxes2 = gsap.utils.toArray('.container2');
 
+boxes2.forEach(box => {
 
-// textbox on hover v2
-const imageContainers = gsap.utils.toArray('.image-container');
-
-imageContainers.forEach(imageContainer => {
-  const textContainer = imageContainer.querySelector('.text-container');
-
-  imageContainer.addEventListener('mouseenter', () => {
-    gsap.to(textContainer, {opacity: 1, duration: 0.2});
+gsap.to(box, { 
+	// xPercent: () => -100 * (boxes.length -1),
+  x: () => -(document.querySelector('.container2').scrollWidth - document.documentElement.clientWidth) + "px",
+	ease: "none", // <-- IMPORTANT!
+	scrollTrigger: {
+	trigger: box,
+	pin: true,
+	start: "-=100px",
+	end: () => "+=" + (document.querySelector('.container2').scrollWidth - window.innerWidth),
+	scrub: true
+    }
   });
-
-  imageContainer.addEventListener('mouseleave', () => {
-    gsap.to(textContainer, {opacity: 0, duration: 0.2});
-  });
-
-  imageContainer.addEventListener('mousemove', (event) => {
-    const bounds = imageContainer.getBoundingClientRect();
-    gsap.to(textContainer, {
-      x: event.clientX - bounds.left,
-      y: event.clientY - bounds.top,
-      duration:0.5,
-      ease: "sine"
-    });
-  });
-
 });
 
-// hover v2 end
+//sideways scroll images (3)
+const boxes3 = gsap.utils.toArray('.container3');
+
+boxes3.forEach(box => {
+
+gsap.to(box, { 
+	// xPercent: () => -100 * (boxes.length -1),
+  x: () => -(document.querySelector('.container3').scrollWidth - document.documentElement.clientWidth) + "px",
+	ease: "none", // <-- IMPORTANT!
+	scrollTrigger: {
+	trigger: box,
+	pin: true,
+	start: "-=100px",
+	end: () => "+=" + (document.querySelector('.container3').scrollWidth - window.innerWidth),
+	scrub: true
+    }
+  });
+});
+
+//sideways scroll images (4)
+const boxes4 = gsap.utils.toArray('.container4');
+
+boxes4.forEach(box => {
+
+gsap.to(box, { 
+	// xPercent: () => -100 * (boxes.length -1),
+  x: () => -(document.querySelector('.container4').scrollWidth - document.documentElement.clientWidth) + "px",
+	ease: "none", // <-- IMPORTANT!
+	scrollTrigger: {
+	trigger: box,
+	pin: true,
+	start: "-=100px",
+	end: () => "+=" + (document.querySelector('.container4').scrollWidth - window.innerWidth),
+	scrub: true
+    }
+  });
+});	
+
+};
+//end of scrollPics
+
 
 // skew
 let proxy = { skew: 0 },

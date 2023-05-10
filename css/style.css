@@ -100,51 +100,28 @@ h3 a:hover {
   /* outline: solid orange; */
 }
 
-.text-boxes {
-  overflow: visible;
-}
-
-.text-boxes div {
-  width: 500px;
-  min-width: 100px;
-  overflow: visible;
-  border: solid;
-  background-color: orange;
-  border-radius: 8px;
-  /* padding: 0; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.text-boxes div h3 {
-  padding:inherit;
-
+.panel img {
+  width: auto;
+  height: 60vh;
+  
+  /* height: clamp(200px, 50vw, 550px); */
+/*    opacity: 0.7;*/
 }
 
 .panel div {
   display: flex;
 }
 
-/* .logos {
-  background-color: yellow;
-  overflow: visible;
-  width: 100%;
-} */
-
-.logos .panel {
+.container2 .panel {
+  background-color: white;
+  max-height: 230px;
+  /* margin: auto; */
   display: flex;
-  overflow: visible;
-  /* max-width: 300px; */
-  max-height: 100px;
-  /* width: 100%; */
-  background-color: #fff;
-  border-radius: 8px;
 }
 
-.logos img {
-  width: auto;
+.container2 .panel img {
+  max-height: 60%;
+  margin: auto;
 }
 
 ul {
@@ -201,10 +178,6 @@ footer div {
 .img-gallery:not(.last) {
     border: solid orange;
 /*  padding-bottom: 1rem;*/
-}
-
-.label-text {
-  padding-top: 3em;
 }
 
 .label-text .text {
@@ -527,110 +500,3 @@ cocoen-component::part(drag) {
 cocoen-component::part(drag)::before {
   border-color: orange;
 }
-
-
-
-/* chatgpt hover start 
-.image-container {
-  position: relative;
-}
-
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(10px, -50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease-out;
-}
-
-.image-container:hover .text-container {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(20px, -50%);
-}
-/* chatgpt hover end */
-
-/* chatgpt v2 */
-/* .image-container {
-  position: relative;
-  margin: 0px;
-}
-
-.image {
-  display: block;
-  height: 60vh;
-}
-
-.text-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s ease-out;
-}
-
-.text-container.visible {
-  opacity: 1;
-}
-
-.text-container a {
-  color: #fff;
-}
-
-.text-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 6px solid rgba(0, 0, 0, 0.5);
-  transform: translateY(-50%);
-} */
-
-/* v2 end */
-
-/*  v3 */
-.image-container {
-  position: relative;
-}
-
-.text-container {
-  position: absolute;
-  top: 1%;
-  left: 1%;
-  border:solid orange;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  transform: translateY(-100px); /* adjust as needed */
-  opacity: 0;
-  pointer-events: none; /* prevent text from interfering with mouse events */
-  transition: opacity 0.2s ease;
-
-  display: flex;
-  flex-direction: column; /* set the flex-direction to column */
-  align-items: center;
-  justify-content: center;
-  z-index: 5000;
-}
-
-.image-container:hover .text-container {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.find-out-more {
-  color: orange;
-}
-/* v3 end */
