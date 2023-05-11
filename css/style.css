@@ -112,6 +112,13 @@ h3 a:hover {
   overflow: visible;
 }
 
+.text-boxes .panel {
+  display: flex;
+  flex-basis: content;
+  min-width: 250px;
+  overflow: visible;
+}
+
 .text-boxes div {
   width: 500px;
   min-width: 100px;
