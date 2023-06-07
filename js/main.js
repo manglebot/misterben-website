@@ -77,20 +77,18 @@ imageContainers.forEach(imageContainer => {
   const textContainer = imageContainer.querySelector('.text-container');
 
   imageContainer.addEventListener('mouseenter', () => {
-    gsap.to(textContainer, {opacity: 1, duration: 0.2});
+    gsap.set(textContainer, {opacity: 1});
   });
 
   imageContainer.addEventListener('mouseleave', () => {
-    gsap.to(textContainer, {opacity: 0, duration: 0.2});
+    gsap.set(textContainer, {opacity: 0});
   });
 
   imageContainer.addEventListener('mousemove', (event) => {
     const bounds = imageContainer.getBoundingClientRect();
-    gsap.to(textContainer, {
+    gsap.set(textContainer, {
       x: event.clientX - bounds.left,
-      y: event.clientY - bounds.top,
-      duration:0.5,
-      ease: "sine"
+      y: event.clientY - bounds.top
     });
   });
 
