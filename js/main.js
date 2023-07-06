@@ -71,28 +71,28 @@ containers.forEach(container => {
 
 
 // textbox on hover v2
-const imageContainers = gsap.utils.toArray('.image-container');
+// const imageContainers = gsap.utils.toArray('.image-container');
 
-imageContainers.forEach(imageContainer => {
-  const textContainer = imageContainer.querySelector('.text-container');
+// imageContainers.forEach(imageContainer => {
+//   const textContainer = imageContainer.querySelector('.text-container');
 
-  imageContainer.addEventListener('mouseenter', () => {
-    gsap.set(textContainer, {opacity: 1});
-  });
+//   imageContainer.addEventListener('mouseenter', () => {
+//     gsap.set(textContainer, {opacity: 1});
+//   });
 
-  imageContainer.addEventListener('mouseleave', () => {
-    gsap.set(textContainer, {opacity: 0});
-  });
+//   imageContainer.addEventListener('mouseleave', () => {
+//     gsap.set(textContainer, {opacity: 0});
+//   });
 
-  imageContainer.addEventListener('mousemove', (event) => {
-    const bounds = imageContainer.getBoundingClientRect();
-    gsap.set(textContainer, {
-      x: event.clientX - bounds.left,
-      y: event.clientY - bounds.top
-    });
-  });
+//   imageContainer.addEventListener('mousemove', (event) => {
+//     const bounds = imageContainer.getBoundingClientRect();
+//     gsap.set(textContainer, {
+//       x: event.clientX - bounds.left,
+//       y: event.clientY - bounds.top
+//     });
+//   });
 
-});
+// });
 
 // hover v2 end
 
