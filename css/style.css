@@ -152,14 +152,16 @@ h3 a:hover {
   display: flex;
   overflow: visible;
   /* max-width: 300px; */
-  max-height: 100px;
+  max-height: 120px;
   /* width: 100%; */
   background-color: #fff;
   border-radius: 8px;
+  align-items: center;
 }
 
-.logos img {
+.logos span img {
   width: auto;
+  max-height: 90px;
 }
 
 ul {
