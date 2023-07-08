@@ -106,7 +106,32 @@ function R(max,min){
 }
 
 
-// // textbox on hover v2
+// textbox on hover v2
+
+const imageContainers = document.querySelectorAll('.image-container');
+
+imageContainers.forEach(imageContainer => {
+  const textContainer = imageContainer.querySelector('.text-container');
+
+  imageContainer.addEventListener('mouseenter', () => {
+    textContainer.style.opacity = 1;
+    // console.log("mouse entered");
+  });
+
+  imageContainer.addEventListener('mouseleave', () => {
+    textContainer.style.opacity = 0;
+    // console.log("mouse left");
+  });
+
+  imageContainer.addEventListener('mousemove', (event) => {
+    const bounds = imageContainer.getBoundingClientRect();
+    textContainer.style.transform = `translate(${event.clientX - bounds.left}px, ${event.clientY - bounds.top}px)`;
+    // console.log("bounds set");
+  });
+});
+
+// vanilla end
+
 // const imageContainers = gsap.utils.toArray('.image-container');
 
 // imageContainers.forEach(imageContainer => {
@@ -133,4 +158,4 @@ function R(max,min){
 
 // });
 
-// // hover v2 end
+// hover v2 end
