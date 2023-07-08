@@ -16,7 +16,7 @@ const updateProgress = (instance) =>
 // }
 // rainbowRandom();
 
-ScrollTrigger.refresh();
+// ScrollTrigger.refresh();
 
 // preload then sideways text scroller
 const scrollPics = () => {
@@ -74,12 +74,12 @@ imageContainers.forEach(imageContainer => {
 
   imageContainer.addEventListener('mouseenter', () => {
     gsap.set(textContainer, {opacity: 1});
-    console.log("mouse entered");
+    // console.log("mouse entered");
   });
 
   imageContainer.addEventListener('mouseleave', () => {
     gsap.set(textContainer, {opacity: 0});
-    console.log("mouse left");
+    // console.log("mouse left");
   });
 
   imageContainer.addEventListener('mousemove', (event) => {
@@ -88,7 +88,7 @@ imageContainers.forEach(imageContainer => {
       x: event.clientX - bounds.left,
       y: event.clientY - bounds.top
     });
-    console.log("bounds set");
+    // console.log("bounds set");
   });
 
 });
