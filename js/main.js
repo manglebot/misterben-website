@@ -16,7 +16,7 @@ const updateProgress = (instance) =>
 // }
 // rainbowRandom();
 
-// ScrollTrigger.refresh();
+ScrollTrigger.refresh();
 
 // preload then sideways text scroller
 const scrollPics = () => {
@@ -41,6 +41,8 @@ const scrollPics = () => {
   });
 }
 
+ScrollTrigger.refresh();
+
 // sideways scroll start
 const containers = gsap.utils.toArray('.container');
 
@@ -64,10 +66,6 @@ containers.forEach(container => {
 
 // Set the width of the background color to match the content width
 // gsap.set('.logos .image-container', {   overflow: 'visible', width: '100%', backgroundColor: '#fff' });
-
-
-//moved down to see if it fixes scrolling issue
-ScrollTrigger.refresh();
 
 // skew
 let proxy = { skew: 0 },
