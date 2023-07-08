@@ -66,35 +66,6 @@ containers.forEach(container => {
 // gsap.set('.logos .image-container', {   overflow: 'visible', width: '100%', backgroundColor: '#fff' });
 
 
-// textbox on hover v2
-const imageContainers = gsap.utils.toArray('.image-container');
-
-imageContainers.forEach(imageContainer => {
-  const textContainer = imageContainer.querySelector('.text-container');
-
-  imageContainer.addEventListener('mouseenter', () => {
-    gsap.set(textContainer, {opacity: 1});
-    // console.log("mouse entered");
-  });
-
-  imageContainer.addEventListener('mouseleave', () => {
-    gsap.set(textContainer, {opacity: 0});
-    // console.log("mouse left");
-  });
-
-  imageContainer.addEventListener('mousemove', (event) => {
-    const bounds = imageContainer.getBoundingClientRect();
-    gsap.set(textContainer, {
-      x: event.clientX - bounds.left,
-      y: event.clientY - bounds.top
-    });
-    // console.log("bounds set");
-  });
-
-});
-
-// hover v2 end
-
 //moved down to see if it fixes scrolling issue
 ScrollTrigger.refresh();
 
@@ -133,3 +104,33 @@ for(var i=50; i--;){
 function R(max,min){
 	return Math.random()*(max-min)+min;
 }
+
+
+// textbox on hover v2
+const imageContainers = gsap.utils.toArray('.image-container');
+
+imageContainers.forEach(imageContainer => {
+  const textContainer = imageContainer.querySelector('.text-container');
+
+  imageContainer.addEventListener('mouseenter', () => {
+    gsap.set(textContainer, {opacity: 1});
+    // console.log("mouse entered");
+  });
+
+  imageContainer.addEventListener('mouseleave', () => {
+    gsap.set(textContainer, {opacity: 0});
+    // console.log("mouse left");
+  });
+
+  imageContainer.addEventListener('mousemove', (event) => {
+    const bounds = imageContainer.getBoundingClientRect();
+    gsap.set(textContainer, {
+      x: event.clientX - bounds.left,
+      y: event.clientY - bounds.top
+    });
+    // console.log("bounds set");
+  });
+
+});
+
+// hover v2 end
