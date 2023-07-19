@@ -44,22 +44,47 @@ const scrollPics = () => {
 ScrollTrigger.refresh();
 
 // sideways scroll start
+
+
+// const containers = gsap.utils.toArray('.container');
+
+// containers.forEach(container => {
+//   gsap.to(container, {
+//     x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: container,
+//       pin: true,
+//       start: "-=100px",
+//       end: () => "+=" + (container.scrollWidth - window.innerWidth),
+//       scrub: true
+//     }
+//   });
+// });
+// sideways scroll end
+
 const containers = gsap.utils.toArray('.container');
 
 containers.forEach(container => {
+  const scrollDistance = container.scrollWidth - container.clientWidth;
+
   gsap.to(container, {
-    x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    x: -scrollDistance,
     ease: "none",
     scrollTrigger: {
       trigger: container,
       pin: true,
       start: "-=100px",
-      end: () => "+=" + (container.scrollWidth - window.innerWidth),
+      end: () => `+=${scrollDistance}`,
       scrub: true
     }
   });
 });
-// sideways scroll end
+
+
+
+
+
 
 // Get the width of the content
 // const contentWidth = document.querySelector('.logos').offsetWidth;
@@ -127,33 +152,5 @@ imageContainers.forEach(imageContainer => {
     // console.log("bounds set");
   });
 });
-
-// vanilla end
-
-// const imageContainers = gsap.utils.toArray('.image-container');
-
-// imageContainers.forEach(imageContainer => {
-//   const textContainer = imageContainer.querySelector('.text-container');
-
-//   imageContainer.addEventListener('mouseenter', () => {
-//     gsap.set(textContainer, {opacity: 1});
-//     // console.log("mouse entered");
-//   });
-
-//   imageContainer.addEventListener('mouseleave', () => {
-//     gsap.set(textContainer, {opacity: 0});
-//     // console.log("mouse left");
-//   });
-
-//   imageContainer.addEventListener('mousemove', (event) => {
-//     const bounds = imageContainer.getBoundingClientRect();
-//     gsap.set(textContainer, {
-//       x: event.clientX - bounds.left,
-//       y: event.clientY - bounds.top
-//     });
-//     // console.log("bounds set");
-//   });
-
-// });
 
 // hover v2 end
